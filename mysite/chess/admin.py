@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import ChessOpenings
+from .models import *
 # Register your models here.
 
-admin.site.register(ChessOpenings)
+admin.site.register(ChessOpening)
+admin.site.register(Variant)
