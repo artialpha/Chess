@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37486185-aee4-44de-85aa-1e435eefe5fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mysite/chess/static/chess/images/header2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/chess/static/chess/images/player1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/chess/static/chess/styles/style2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/chess/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/chess/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/chess/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/chess/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/static/humans.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/static/humans.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/chess/static/chess/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/chess/static/chess/styles/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/templates/mysite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/mysite/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,46 +18,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/chess/urls.py">
+        <entry file="file://$PROJECT_DIR$/mysite/templates/mysite/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/chess/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mysite/templates/mysite/index.html">
+        <entry file="file://$PROJECT_DIR$/mysite/chess/static/chess/styles/style2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/mysite/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="121" column="48" selection-start-line="121" selection-start-column="48" selection-end-line="121" selection-end-column="48" />
-              <folding>
-                <element signature="e#307#316#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="268">
+              <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -77,6 +50,7 @@
       <find>templ</find>
       <find>static</find>
       <find>staticFiler</find>
+      <find>de</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -93,11 +67,14 @@
         <option value="$PROJECT_DIR$/mysite/chess/admin.py" />
         <option value="$PROJECT_DIR$/mysite/chess/models.py" />
         <option value="$PROJECT_DIR$/mysite/chess/migrations/0001_initial.py" />
-        <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/mysite/chess/urls.py" />
         <option value="$PROJECT_DIR$/mysite/chess/views.py" />
+        <option value="$PROJECT_DIR$/mysite/chess/urls.py" />
+        <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
+        <option value="$PROJECT_DIR$/mysite/chess/static/chess/images/style.css" />
+        <option value="$PROJECT_DIR$/mysite/chess/static/chess/styles/style.css" />
         <option value="$PROJECT_DIR$/mysite/templates/mysite/index.html" />
+        <option value="$PROJECT_DIR$/mysite/chess/static/chess/styles/style2.css" />
       </list>
     </option>
   </component>
@@ -113,6 +90,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -135,30 +113,63 @@
               <item name="django" type="b2602c69:ProjectViewProjectNode" />
               <item name="django" type="462c0819:PsiDirectoryNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="chess" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="chess" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="chess" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="chess" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="chess" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="chess" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="chess" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
+              <item name="mysite" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../python-django" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysite/chess/static/chess/images" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\chess\static\chess\styles" />
+      <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\chess\static\chess" />
+      <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\chess\static" />
+      <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\chess" />
+      <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\mysite\static\mysite\images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\chess\static\chess\images" />
       <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite" />
       <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\mysite" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\static\myapp" />
-      <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\chess" />
-      <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\templates\mysite" />
-      <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\static" />
-      <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -254,7 +265,28 @@
       <option name="project" value="LOCAL" />
       <updated>1568053839618</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="first template">
+      <created>1568062508188</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1568062508188</updated>
+    </task>
+    <task id="LOCAL-00012" summary="image in template">
+      <created>1568067424261</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1568067424261</updated>
+    </task>
+    <task id="LOCAL-00013" summary="styles added">
+      <created>1568067862617</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1568067862617</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -290,7 +322,9 @@
     <MESSAGE value="heroku" />
     <MESSAGE value="some views" />
     <MESSAGE value="first template" />
-    <option name="LAST_COMMIT_MESSAGE" value="first template" />
+    <MESSAGE value="image in template" />
+    <MESSAGE value="styles added" />
+    <option name="LAST_COMMIT_MESSAGE" value="styles added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/mysite/mysite/.gitignore" />
@@ -304,7 +338,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/static/humans.txt">
+    <entry file="file://$PROJECT_DIR$/mysite/chess/static/humans.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="72" lean-forward="true" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
@@ -389,20 +423,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/chess/urls.py">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/meta.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="146">
+          <caret line="423" column="22" selection-start-line="423" selection-start-column="22" selection-end-line="423" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/chess/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        <state relative-caret-position="17">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
@@ -411,18 +442,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/mysite/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="121" column="48" selection-start-line="121" selection-start-column="48" selection-end-line="121" selection-end-column="48" />
+        <state relative-caret-position="2040">
+          <caret line="121" column="51" selection-start-line="121" selection-start-column="51" selection-end-line="121" selection-end-column="51" />
           <folding>
             <element signature="e#307#316#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/chess/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/chess/static/chess/styles/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/templates/mysite/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        <state relative-caret-position="136">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/chess/static/chess/styles/style2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
         </state>
       </provider>
     </entry>
