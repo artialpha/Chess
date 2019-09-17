@@ -2,7 +2,7 @@ from django.db import models
 
 
 class ChessOpening(models.Model):
-    name_of_opening = models.CharField(max_length=200)
+    name = models.CharField(max_length=200)
     description = models.TextField()
     eco = models.CharField(max_length=200)
 

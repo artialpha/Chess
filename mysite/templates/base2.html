@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}index{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static "chess/styles/style4.css" %}">
+{% endblock %}
+
+{% block content %}
+ <div id="wrapper">
+            <header>
+                <img src="{% static "chess/images/header4.jpg" %}" alt="My image">
+                <a>zaloguj się: </a>
+
+            </header>
+
+            <nav>
+
+
+                <a href="{% url 'list openings'  %}">debiuty</a>
+                <div class="hover_img">
+                    <a href="#">gracze<span><img src="{% static "chess/images/player1.jpg" %}" alt="image" height="100" /></span></a>
+                </div>
+                <a>słynne partie</a>
+                <a>FIDE</a>
+                <a>literatura</a>
+
+            </nav>
+
+            <section>
+                {% block rest %}
+                {% endblock %}
+
+            </section>
+
+            <footer>
+
+
+            </footer>
+ </div>
+
+{% endblock %}
