@@ -1,11 +1,26 @@
 {% extends 'base3.html' %}
+{% load static %}
 
 {% block title %}chess opening{% endblock %}
 
+{% block head %}
+<link rel="stylesheet" href="{% static "chess/styles/1single_open.css" %}">
+{% endblock %}
+
 {% block content %}
-    {{ name }}
-    <br>
-    {{ description }}
-    <br>
-    {{ eco }}
+    <section>
+        <h1>
+            {{ name }}
+        </h1>
+
+        <h2>
+            {{ eco }}
+        </h2>
+
+        <div class="description">
+            {{ description }}
+        </div>
+
+
+    </section>
 {% endblock %}

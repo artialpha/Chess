@@ -1,23 +1,29 @@
 {% extends 'base3.html' %}
-{% load  %}
+{% load static %}
 {% block title %}list chess opening{% endblock %}
 
+{% block head %}
+<link rel="stylesheet" href="{% static "chess/styles/1list_chess_open.css" %}">
+{% endblock %}
+
 {% block content %}
-    <a>narazie nic</a>
-    <table style="width:50%">
-        {% for open in chess_open %}
-            <tr>
-                <td>
-                    {{ open.eco }}
-                </td>
-                <td>
-                    <a href="{% url 'open' open.id %}">{{ open.name }}</a>
-                </td>
+    <section>
+        <h1>eco debiut</h1>
+        <table style="width:50%" border="1">
+            {% for open in chess_open %}
+                <tr>
+                    <td>
+                        {{ open.eco }}
+                    </td>
+                    <td>
+                        <a href="{% url 'open' open.id %}">{{ open.name }}</a>
+                    </td>
 
-            </tr>
-        {% endfor %}
+                </tr>
+            {% endfor %}
 
 
-    </table>
+        </table>
+    </section>
 
 {% endblock %}
