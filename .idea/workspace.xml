@@ -4,7 +4,11 @@
     <list default="true" id="37486185-aee4-44de-85aa-1e435eefe5fe" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/mysite/chess/static/chess/styles/1list_chess_open.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mysite/chess/static/chess/styles/1single_open.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/templates/admin/chess_open_add.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/chess/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/chess/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/chess/static/chess/styles/style4.css" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/chess/static/chess/styles/style4.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/templates/base3.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/base3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/templates/chess/list_chess_opening.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/chess/list_chess_opening.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/templates/chess/single_chess_opening.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/chess/single_chess_opening.html" afterDir="false" />
     </list>
@@ -22,7 +26,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="85">
               <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
@@ -31,41 +35,62 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mysite/templates/chess/list_chess_opening.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/templates/base3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            <state relative-caret-position="153">
+              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/chess/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mysite/chess/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
               <folding>
-                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/chess/static/chess/styles/1list_chess_open.css">
+        <entry file="file://$PROJECT_DIR$/mysite/chess/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state>
+              <caret selection-end-column="28" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/chess/static/chess/styles/1single_open.css">
+        <entry file="file://$PROJECT_DIR$/mysite/templates/admin/chess_open_add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="20" />
+            <state relative-caret-position="102">
+              <caret line="6" column="80" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/templates/base3.html">
+        <entry file="file://$PROJECT_DIR$/mysite/chess/static/chess/styles/style4.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="765">
+              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -100,13 +125,11 @@
         <option value="$PROJECT_DIR$/mysite/.gitignore" />
         <option value="$PROJECT_DIR$/mysite/runtime.txt" />
         <option value="$PROJECT_DIR$/mysite/requirements.txt" />
-        <option value="$PROJECT_DIR$/mysite/chess/admin.py" />
         <option value="$PROJECT_DIR$/mysite/chess/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/mysite/chess/static/chess/images/style.css" />
         <option value="$PROJECT_DIR$/mysite/chess/static/chess/styles/style2.css" />
         <option value="$PROJECT_DIR$/mysite/chess/static/chess/styles/style3.css" />
         <option value="$PROJECT_DIR$/mysite/chess/static/chess/styles/style.css" />
-        <option value="$PROJECT_DIR$/mysite/chess/static/chess/styles/style4.css" />
         <option value="$PROJECT_DIR$/mysite/chess/models.py" />
         <option value="$PROJECT_DIR$/mysite/chess/static/chess/forms.py" />
         <option value="$PROJECT_DIR$/mysite/chess/forms.py" />
@@ -127,7 +150,6 @@
         <option value="$PROJECT_DIR$/mysite/chess/views.py" />
         <option value="$PROJECT_DIR$/mysite/templates/users/profile.html" />
         <option value="$PROJECT_DIR$/mysite/users/urls.py" />
-        <option value="$PROJECT_DIR$/mysite/templates/base3.html" />
         <option value="$PROJECT_DIR$/mysite/mysite/settings.py" />
         <option value="$PROJECT_DIR$/mysite/users/views.py" />
         <option value="$PROJECT_DIR$/mysite/templates/users/omg.html" />
@@ -135,6 +157,10 @@
         <option value="$PROJECT_DIR$/mysite/chess/static/chess/styles/1single_open.css" />
         <option value="$PROJECT_DIR$/mysite/chess/static/chess/styles/1list_chess_open.css" />
         <option value="$PROJECT_DIR$/mysite/templates/chess/list_chess_opening.html" />
+        <option value="$PROJECT_DIR$/mysite/chess/static/chess/styles/style4.css" />
+        <option value="$PROJECT_DIR$/mysite/templates/base3.html" />
+        <option value="$PROJECT_DIR$/mysite/templates/admin/chess_open_add.html" />
+        <option value="$PROJECT_DIR$/mysite/chess/admin.py" />
       </list>
     </option>
   </component>
@@ -172,25 +198,14 @@
               <item name="django" type="b2602c69:ProjectViewProjectNode" />
               <item name="django" type="462c0819:PsiDirectoryNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="chess" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="django" type="b2602c69:ProjectViewProjectNode" />
               <item name="django" type="462c0819:PsiDirectoryNode" />
               <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="chess" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="chess" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="chess" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="chess" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -425,7 +440,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988864" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988864" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" sideWeight="0.5011136" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5011136" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -436,8 +451,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.59970236" visible="true" weight="0.3207856" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.4002976" side_tool="true" visible="true" weight="0.3207856" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.5989583" visible="true" weight="0.3207856" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.40104166" side_tool="true" visible="true" weight="0.3207856" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -489,16 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/chess/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -645,16 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/chess/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/chess/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -662,13 +657,6 @@
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/chess/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -706,34 +694,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/chess/static/chess/styles/style4.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/users/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/templates/chess/single_chess_opening.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/templates/base3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -757,6 +721,64 @@
           <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/chess/static/chess/styles/style4.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/templates/base3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/chess/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/templates/admin/chess_open_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="80" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/chess/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="28" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/chess/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
