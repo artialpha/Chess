@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static "chess/styles/style4.css" %}">
+    <link rel="stylesheet" href="{% static "chess/styles/style5.css" %}">
     <title>{% block title %}{% endblock %}</title>
       {% block head %}{% endblock %}
 </head>
@@ -28,7 +28,7 @@
                 <div class="hover_img">
                     <a href="#">gracze<span><img src="{% static "chess/images/player1.jpg" %}" alt="image" height="100" /></span></a>
                 </div>
-                <a>szachownica</a>
+                <a href="{% url 'chess board' %}">szachownica</a>
                 <a>FIDE</a>
                 <a>literatura</a>
 

@@ -9,5 +9,6 @@ urlpatterns = [
     path('nothing/', views.nothing, name='nothing'),
     path('create-opening/', views.create_chess_opening, name='create opening'),
     path('list-opening/', views.list_chess_opening, name='list openings'),
+    path('chess-board/', views.chess_board, name='chess board'),
 ]
 

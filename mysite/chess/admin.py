@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.http import HttpResponseRedirect
-
+import wikipedia
 from .models import *
 from django.urls import path
 # Register your models here.
@@ -21,7 +21,8 @@ class ChessOpeningAdmin(admin.ModelAdmin):
         return my_urls + urls
 
     def add(self, request):
-        print("buahahuah")
+        chess_open = wikipedia.page("List_of_chess_openings")
+        print(chess_open.section)
         return HttpResponseRedirect("../")
 
 

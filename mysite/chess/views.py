@@ -44,3 +44,7 @@ def chess_opening(request, open_id):
     return render(request, 'chess/single_chess_opening.html', context)
 
 
+def chess_board(request):
+    return render(request, 'chess/chess_board.html', {})
+
+
