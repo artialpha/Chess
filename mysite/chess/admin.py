@@ -3,6 +3,8 @@ from django.http import HttpResponseRedirect
 import wikipedia
 from .models import *
 from django.urls import path
+import csv
+from django.contrib.staticfiles.storage import staticfiles_storage
 # Register your models here.
 
 
@@ -21,12 +23,19 @@ class ChessOpeningAdmin(admin.ModelAdmin):
         return my_urls + urls
 
     def add(self, request):
-        chess_open = wikipedia.page("List_of_chess_openings")
-        print(chess_open.section)
+        #chess_open = wikipedia.page("List_of_chess_openings")
+        print("tutaj zydzie")
+        p = staticfiles_storage.path("ECO/a.tsv")
+        with open(p) as fd:
+            rd = csv.reader(fd, delimiter="\t", quotechar='"')
+            print("w srodku")
+            for row in rd:
+                print(row[2])
+
         return HttpResponseRedirect("../")
 
 
-
+#"C:/Users/Dymitr/PycharmProjects/django/mysite/chess/static/chess/ECO/a.tsv"
 
 
 
