@@ -22,15 +22,20 @@ class ChessOpeningAdmin(admin.ModelAdmin):
         ]
         return my_urls + urls
 
+
+
     def add(self, request):
-        #chess_open = wikipedia.page("List_of_chess_openings")
-        print("tutaj zydzie")
-        p = staticfiles_storage.path("ECO/a.tsv")
-        with open(p) as fd:
-            rd = csv.reader(fd, delimiter="\t", quotechar='"')
-            print("w srodku")
-            for row in rd:
-                print(row[2])
+        path = "ECO/{}.tsv"
+        for i in range(5):
+            p = staticfiles_storage.path(path.format(chr(i+97)))
+            with open(p) as fd:
+                rd = csv.reader(fd, delimiter="\t", quotechar='"')
+                #list_rd = list(rd)
+                for row in rd:
+                    chess_opening = ChessOpening(eco=row[0], name=row[1],
+                                                 epd=row[2], algebraic_notation=row[3])
+                    chess_opening.save()
+                    print(row)
 
         return HttpResponseRedirect("../")
 

@@ -39,10 +39,13 @@ def list_chess_opening(request):
 
 def chess_opening(request, open_id):
     chess_open = ChessOpening.objects.get(pk=open_id)
+    list_of_positions = chess_open.create_chess_board()
+    print(list_of_positions)
     context = {
         'name': chess_open.name,
         'description': chess_open.description,
-        'eco': chess_open.eco
+        'eco': chess_open.eco,
+        'position': list_of_positions
     }
     return render(request, 'chess/single_chess_opening.html', context)
 
@@ -104,43 +107,6 @@ def chess_board(request):
         return dictionary
 
 
-    position2 = {
-        "A8": "&#9820;",
-        "B8": "&#9822;",
-        "C8": "&#9821;",
-        "D8": "&#9819;",
-        "E8": "&#9818;",
-        "F8": "&#9821;",
-        "G8": "&#9822;",
-        "H8": "&#9820;",
-
-        "A7": "&#9823;",
-        "B7": "&#9823;",
-        "C7": "&#9823;",
-        "D7": "&#9823;",
-        "E7": "&#9823;",
-        "F7": "&#9823;",
-        "G7": "&#9823;",
-        "H7": "&#9823;",
-
-        "A1": "&#9814;",
-        "B1": "&#9816;",
-        "C1": "&#9815;",
-        "D1": "&#9813;",
-        "E1": "&#9812;",
-        "F1": "&#9815;",
-        "G1": "&#9816;",
-        "H1": "&#9814;",
-
-        "A2": "&#9817;",
-        "B2": "&#9817;",
-        "C2": "&#9817;",
-        "D2": "&#9817;",
-        "E2": "&#9817;",
-        "F2": "&#9817;",
-        "G2": "&#9817;",
-        "H2": "&#9817;",
-    }
 
     epd = 'rnb1qrk1/ppp1b1pp/3ppn2/5p2/2PP4/1PN2NP1/P3PPBP/R1BQ1RK1'
 

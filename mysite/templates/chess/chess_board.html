@@ -3,6 +3,9 @@
 {% block title %}chess board{% endblock %}
 
 {% block content %}
+{% block rest %}{% endblock %}
+
+
     <table border="1" class="chess" style="width:250px; height:250px;" >
         <tr>
             <!-- 1-8 -->
@@ -98,9 +101,6 @@
     </table>
 
 <script type="text/javascript">
-    function myFunction() {
-        document.getElementById("A8").innerHTML = "{{ position.A8|safe }}";
-    }
 
     function myFunction() {
         {% for key, value in position.items %}
@@ -109,4 +109,5 @@
     }
     myFunction();
 </script>
+
 {% endblock %}

@@ -1,4 +1,4 @@
-{% extends 'base3.html' %}
+{% extends 'chess\chess_board.html' %}
 {% load static %}
 
 {% block title %}chess opening{% endblock %}
@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="{% static "chess/styles/1single_open.css" %}">
 {% endblock %}
 
-{% block content %}
+{% block rest %}
     <section>
         <h1>
             {{ name }}
@@ -23,4 +23,18 @@
 
 
     </section>
+
+
+
 {% endblock %}
+
+
+<script type="text/javascript">
+
+    function myFunction() {
+        {% for key, value in position.items %}
+            document.getElementById("{{ key }}").innerHTML = "{{ value|safe }}";
+        {% endfor %}
+    }
+    myFunction();
+</script>
