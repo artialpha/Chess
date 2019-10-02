@@ -1,0 +1,41 @@
+{% extends 'base3.html' %}
+{% load static %}
+{% block title %} players {% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static "player/styles/7list_players.css" %}">
+{% endblock %}
+
+{% block content %}
+
+    <table>
+
+    {% for player in players %}
+            <tr class="row">
+                <td class="description">
+                    <p>{{ player.description }}</p>
+                    <p class="favorite name">Favorite opening</p>
+                    <p class="favorite text">
+                        <a href="{% url 'open' open_id=player.opening.id  %}">
+                            {{ player.opening.eco }} {{ player.opening.name }} {{ player.opening.id }}
+                        </a>
+
+                    </p>
+                </td>
+
+                <td class="container">
+                    <p>{{ player.name }} {{ player.surname }}</p>
+                    <img src="{{ player.image }}">
+                </td>
+            </tr>
+    {% endfor %}
+
+
+    </table>
+
+
+
+
+{% endblock %}
+
+

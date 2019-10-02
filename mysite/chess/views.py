@@ -40,12 +40,12 @@ def list_chess_opening(request):
 def chess_opening(request, open_id):
     chess_open = ChessOpening.objects.get(pk=open_id)
     list_of_positions = chess_open.create_chess_board()
-    print(list_of_positions)
     context = {
         'name': chess_open.name,
         'description': chess_open.description,
         'eco': chess_open.eco,
-        'position': list_of_positions
+        'position': list_of_positions,
+        'algebraic_notation': chess_open.algebraic_notation
     }
     return render(request, 'chess/single_chess_opening.html', context)
 

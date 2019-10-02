@@ -3,8 +3,8 @@
 
 {% block title %}chess opening{% endblock %}
 
-{% block head %}
-<link rel="stylesheet" href="{% static "chess/styles/1single_open.css" %}">
+{% block headsingle %}
+<link rel="stylesheet" href="{% static "chess/styles/2single_open.css" %}">
 {% endblock %}
 
 {% block rest %}
@@ -21,6 +21,10 @@
             {{ description }}
         </div>
 
+        <div class="notation">
+            {{ algebraic_notation }}
+        </div>
+
 
     </section>
 
@@ -29,12 +33,4 @@
 {% endblock %}
 
 
-<script type="text/javascript">
 
-    function myFunction() {
-        {% for key, value in position.items %}
-            document.getElementById("{{ key }}").innerHTML = "{{ value|safe }}";
-        {% endfor %}
-    }
-    myFunction();
-</script>
