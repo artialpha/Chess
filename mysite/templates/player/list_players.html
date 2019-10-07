@@ -3,7 +3,7 @@
 {% block title %} players {% endblock %}
 
 {% block head %}
-<link rel="stylesheet" href="{% static "player/styles/7list_players.css" %}">
+<link rel="stylesheet" href="{% static "player/styles/1list_players.css" %}">
 {% endblock %}
 
 {% block content %}
@@ -24,10 +24,16 @@
                 </td>
 
                 <td class="container">
-                    <p>{{ player.name }} {{ player.surname }}</p>
-                    <img src="{{ player.image }}">
+
+                    <figure>
+                        <img src="{{ player.image }}" alt="photo of a player" title="player">
+                        <figcaption style="text-aling: center">{{ player.name }} {{ player.surname }}</figcaption>
+                    </figure>
+
                 </td>
+
             </tr>
+
     {% endfor %}
 
 

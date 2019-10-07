@@ -1,35 +1,25 @@
 {% extends 'base3.html' %}
-
+{% load static %}
 {% block title %}registration{% endblock %}
 
+{% block head %}
+    <link rel="stylesheet" href="{% static "users/styles/1login.css"%}">
+{% endblock %}
 
 
 {% block content %}
 
     <form method="post" >
         {% csrf_token %}
-        <div class="fieldWrapper">
-            <a>Imie użytkownika</a>
-            {{ form.username }}
-        </div>
 
-        <div class="fieldWrapper">
-            <a>Hasło</a>
-            {{ form.password1 }}
-        </div>
-
-        <div class="fieldWrapper">
-            <a>Powtórz Hasło</a>
-            {{ form.password2 }}
-        </div>
-
-        <div class="fieldWrapper">
-            <a> Email </a>
-            {{ form.email }}
-        </div>
-
-
-        <button class="btn btn-outline-info" type="submit">Sign up</button>
+        <fieldset>
+            <legend>Register</legend>
+            <p>User Name: {{ form.username }}</p>
+            <p>Password: {{ form.password1 }}</p>
+            <p>Repeat Password: {{form.password2 }} </p>
+            <p>Email: {{ form.email }}</p>
+            <button class="btn btn-outline-info" type="submit">Sign up</button>
+        </fieldset>
     </form>
 
 

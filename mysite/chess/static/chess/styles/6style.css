@@ -24,6 +24,7 @@ header {
 
 header a{
     float: right;
+    margin: 3% 5% 0% 0%;
 }
 
 
@@ -31,7 +32,7 @@ header a{
 header img {
     margin 10 10 12 20px;
     vertical-align:top;
-    width: 40%;
+    width: 70%;
 }
 
 
@@ -43,7 +44,7 @@ nav {
 
 nav a {
     display: block;
-    width: 20%;
+    width: 25%;
     float: left;
     font-size: 20px;
     color: white;
@@ -59,6 +60,7 @@ nav a:hover{
 .hover_img a { position:relative; }
 .hover_img a span { position:absolute; display:none; z-index:99; }
 .hover_img a:hover span { display:block; }
+
 
 
 

@@ -1,0 +1,59 @@
+
+section{
+    overflow: overlay;
+    background-color: silver;
+    width: 100%;
+}
+
+.row {
+    padding: 2%;
+    background-color: #E6E6EA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+
+
+.description{
+    float: left;
+    width: 40%;
+    background-color: #F7F7F7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px grey;
+}
+
+.favorite{
+    text-align: center;
+}
+
+.favorite.name{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.favorite.text{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.container{
+    margin: 2%;
+    float: right;
+    width: 20%;
+    background-color: inherit;
+}
+
+.container img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+figure figcaption {
+    text-align: center;
+}
+

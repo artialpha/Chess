@@ -1,24 +1,27 @@
 
 section{
     overflow: overlay;
-    border: 1px solid yellow;
     background-color: silver;
     width: 100%;
 }
 
 .row {
-    padding: 10px;
+    padding: 2%;
     background-color: #E6E6EA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
 }
 
 
 
 .description{
-    margin: 5% 0% 2% 15%;
     float: left;
     width: 40%;
-    border: 1px solid orange;
     background-color: #F7F7F7;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .favorite{
@@ -38,20 +41,17 @@ section{
 }
 
 .container{
-    margin: 2% 20% 2% 0%;
+    margin: 2%;
     float: right;
     width: 20%;
-    border: 1px solid green;
     background-color: inherit;
 }
 
-.container p{
-    text-align: center;
+figcaption {
+    text-aling: center;
 }
 
 .container img{
-
     width: 100%;
-
 }
 
