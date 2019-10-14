@@ -5,11 +5,22 @@
     box-sizing: border-box;
 }
 
+section{
+    position: relative;
+    z-index: 10;
+}
+
 body {
     background-color: dimgrey;
+        position: relative;
+    z-index: 10;
+
 }
 
 #wrapper {
+    position: relative;
+    z-index: 10;
+
     margin: 0 100px;
     max-width: 1300px;
     margin: 0 auto;
@@ -46,6 +57,7 @@ nav a {
     display: block;
     width: 25%;
     float: left;
+
     font-size: 20px;
     color: white;
     text-align: center;
@@ -57,11 +69,23 @@ nav a:hover{
     background-color: DarkSlateGray;
 }
 
-.hover_img a { position:relative; }
-.hover_img a span { position:absolute; display:none; z-index:99; }
-.hover_img a:hover span { display:block; }
+
+.nav-image a { position:relative; }
 
 
+.nav-image a span {
+    position:absolute;
+    display:none;
+    z-index: 99;
+    border: 3px solid red;
+    overflow: visible;
+}
+
+.nav-image a:hover span {
+    display: block;
+    height: 200px;
+    width: 200px;
+}
 
 
 

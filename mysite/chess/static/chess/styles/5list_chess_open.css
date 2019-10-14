@@ -1,0 +1,91 @@
+section {
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+.nav-on-page {
+    position: sticky;
+    top: 0;
+    margin: 50px auto;
+    border: 10px solid Teal;
+    width: 80%;
+    background-color: MediumAquamarine;
+    white-space-collapsing:discard;
+    font-size: 0;
+}
+
+.nav-on-page ul li {
+    font-size: 14px;
+    padding: 10px;
+    color: white;
+    display:inline-block;
+    width: 20%;
+
+    text-align: center;
+    border: 1px solid Teal;
+}
+
+.search {
+    width: 30%;
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+
+
+
+.content-table {
+    margin: 10px auto;
+    width: 60%;
+    border-collapse: collapse;
+
+
+}
+
+.content-table thead{
+    background-color: DarkSlateGray;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+
+}
+
+.content-table thead td:first-child{
+    border-top-left-radius: 20px;
+}
+
+
+.content-table thead td:last-child{
+    border-top-right-radius: 20px;
+}
+
+.content-table tbody td {
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 1px solid black;
+
+}
+
+.content-table tbody tr:nth-child(odd) {
+    background-color: Gainsboro;
+}
+
+
+.content-table tbody tr:nth-child(even) {
+    background-color: DarkGray;
+}
+
+.content-table tbody a{
+    color: black;
+}
+
+.content-table tbody a:hover{
+    color: DeepSkyBlue;
+}
+
+
+

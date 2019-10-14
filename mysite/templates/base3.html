@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static "chess/styles/6style.css" %}">
+    <link rel="stylesheet" href="{% static "chess/styles/7style.css" %}">
     <title>{% block title %}{% endblock %}</title>
       {% block head %}{% endblock %}
 </head>
@@ -22,14 +22,10 @@
             </header>
 
             <nav>
-
-
                 <a href="{% url 'list openings'  %}">chess openings</a>
                 <a href="{% url 'players' %}">players</a>
                 <a href="{% url 'chess board' %}">chessboard</a>
                 <a href="https://ratings.fide.com/top.phtml?list=men">FIDE</a>
-
-
             </nav>
 
             <section>

@@ -29,9 +29,27 @@ def create_chess_opening(request):
 
 
 def list_chess_opening(request):
-    chess_open = ChessOpening.objects.order_by('eco').all()
+    a_open = ChessOpening.objects.order_by('eco').filter(eco__contains='A')
+    b_open = ChessOpening.objects.order_by('eco').filter(eco__contains='B')
+    c_open = ChessOpening.objects.order_by('eco').filter(eco__contains='C')
+    d_open = ChessOpening.objects.order_by('eco').filter(eco__contains='D')
+    e_open = ChessOpening.objects.order_by('eco').filter(eco__contains='E')
+
+    chess_open = [
+        {'open': a_open, 'text': "group A"},
+        {'open': b_open, 'text': "group B"},
+        {'open': c_open, 'text': "group C"},
+        {'open': d_open, 'text': "group D"},
+        {'open': e_open, 'text': "group E"},
+    ]
+
     context = {
-        'chess_open': chess_open
+        'chess_open': chess_open,
+        'a_open': a_open,
+        'b_open': b_open,
+        'c_open': c_open,
+        'd_open': d_open,
+        'e_open': e_open,
     }
 
     return render(request, 'chess/list_chess_opening.html', context)

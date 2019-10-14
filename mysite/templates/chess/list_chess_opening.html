@@ -3,11 +3,29 @@
 {% block title %}list chess opening{% endblock %}
 
 {% block head %}
-<link rel="stylesheet" href="{% static "chess/styles/3list_chess_open.css" %}">
+<link rel="stylesheet" href="{% static "chess/styles/5list_chess_open.css" %}">
 {% endblock %}
 
 {% block content %}
     <section>
+
+        <div class="nav-on-page">
+            <ul>
+                <li><a href="#group A">Group A</a></li>
+                <li><a href="#group B">Group B</a></li>
+                <li><a href="#group C">Group C</a></li>
+                <li><a href="#group D">Group D</a></li>
+                <li><a href="#group E">Group E</a></li>
+            </ul>
+        </div>
+
+        <div class="search">
+            <p>Search a chess opening:</p>
+            <form action="/my/link/location" method="get">
+                <input type="submit" value="Go to my link location"
+                     name="Submit" id="frm1_submit" />
+            </form>
+        </div>
 
         <table class="content-table">
 
@@ -19,16 +37,25 @@
             </thead>
 
             <tbody>
-                {% for open in chess_open %}
-                    <tr>
-                        <td>
-                            {{ open.eco }}
-                        </td>
-                        <td>
-                            <a href="{% url 'open' open.id %}">{{ open.name }}</a>
-                        </td>
 
+
+                {% for group in chess_open %}
+                    <tr>
+                        <td colspan="2" id="{{ group.text }}">{{ group.text }}</td>
                     </tr>
+                    {% for open in  group.open  %}
+                        <tr>
+                            <td>
+                                {{ open.eco }}
+                            </td>
+                            <td>
+                                <a href="{% url 'open' open.id %}">{{ open.name }}</a>
+                            </td>
+
+                        </tr>
+                    {% endfor %}
+
+
                 {% endfor %}
             </tbody>
 
