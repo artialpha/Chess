@@ -3,7 +3,7 @@
 
 
 {% block head %}
-<link rel="stylesheet" href="{% static "pawn/styles/4pawn.css" %}">
+<link rel="stylesheet" href="{% static "pawn/styles/3pawn.css" %}">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 {% endblock %}
@@ -12,12 +12,75 @@
 
     <div id="content">
         <figure>
-            <img id="piece" src="{%static 'pawn/images/piece1.jpg'%}" alt="The Pulpit Rock" >
-            <figcaption></figcaption>
+
+            <div id="image-div">
+                <img id="piece" src="{%static 'pawn/images/piece1.jpg'%}" alt="The Pulpit Rock" >
+            </div>
+
+            <figcaption>
+
+                <div class="arrow-out">
+                    <p><i class="arrow left"></i> <i class="arrow right"></i></p>
+                </div>
+
+                <p id="p1">
+                    The king (♔,♚) is the most important piece in the game of chess.
+                    The object of the game is to threaten the opponent's king in such
+                    a way that escape is not possible (checkmate). If a player's king
+                    is threatened with capture, it is said to be in check, and the
+                    player must remove the threat of capture on the next move.
+                    If this cannot be done, the king is said to be in checkmate,
+                    resulting in a loss for that player. Although the king is the
+                    most important piece, it is usually the weakest piece in the game
+                    until a later phase, the endgame. Players cannot make any move that
+                    places their own king in check.
+                </p>
+
+                <p id="p2">
+                    The queen (♕, ♛) is the most powerful piece in the game of chess,
+                    able to move any number of squares vertically, horizontally or diagonally.
+                    Each player starts the game with one queen, placed in the middle of the
+                    first rank next to the king. Because the queen is the strongest piece,
+                    a pawn is promoted to a queen in the vast majority of cases.
+
+                </p>
+
+                <p id="p3">
+                    The bishop (♗,♝) is a piece in the game of chess. Each player begins
+                    the game with two bishops. One starts between the king's knight and
+                    the king, the other between the queen's knight and the queen. The starting
+                    squares are c1 and f1 for White's bishops, and c8 and f8 for Black's bishops.
+                </p>
+
+                <p id="p4">
+                    The knight (♘,♞) is a piece in the game of chess, representing a knight
+                    (armored cavalry). It is normally represented by a horse's head and neck.
+                    Each player starts with two knights, which begin on the row closest to the player,
+                    between the rooks and bishops.
+                </p>
+
+
+                <p id="p5">
+                    The rook (/rʊk/; ♖,♜) is a piece in the game of chess. Formerly the piece
+                    (from Persian رخ rokh/rukh) was called the tower, marquess, rector, and
+                    comes (Sunnucks 1970). The term castle is considered informal, incorrect,
+                    or old-fashioned.[1][2]
+                </p>
+
+
+                <p id="p6">The pawn (♙,♟) is the most numerous piece in the game of chess,
+                    and in most circumstances, also the weakest.
+                    It historically represents infantry, or more particularly,
+                    armed peasants or pikemen. Each player begins a game with eight pawns,
+                    one on each square of the rank immediately in front of the other pieces.
+                    (The white pawns start on a2, b2, c2, d2, e2, f2, g2, h2;
+                    the black pawns start on a7, b7, c7, d7, e7, f7, g7, h7.)
+                </p>
+
+
+            </figcaption>
         </figure>
-        <div class="arrow-out">
-            <p><i class="arrow left"></i> <i class="arrow right"></i></p>
-        </div>
+
 
     </div>
 
@@ -25,7 +88,7 @@
 <script>
 var path = "{% static "pawn/images/" %}"
 </script>
-<script src="{% static "pawn/js/pawn.js" %}" >
+<script src="{% static "pawn/js/1pawn.js" %}" >
 
 </script>
 {% endblock %}
