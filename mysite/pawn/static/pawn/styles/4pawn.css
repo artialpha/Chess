@@ -1,0 +1,46 @@
+
+#content {
+    position: relative;
+    padding: 20px;
+    border: 1px solid red;
+    margin: auto;
+    width: 50%;
+}
+
+figure {
+    width: 50%;
+    margin: auto;
+    border: 1px solid yellow;
+}
+
+figure > img {
+    border: 1px solid green;
+    width: 100%;
+
+}
+
+
+.arrow-out{
+    margin-top: 20px;
+    border: 1px solid blue;
+    height: 50px;
+      text-align: center;
+}
+
+i {
+  border: solid black;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 10px;
+
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}

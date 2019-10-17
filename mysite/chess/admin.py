@@ -1,6 +1,5 @@
 from django.contrib import admin
 from django.http import HttpResponseRedirect
-import wikipedia
 from .models import *
 from django.urls import path
 import csv

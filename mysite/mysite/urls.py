@@ -21,5 +21,6 @@ urlpatterns = [
     path('', include('chess.urls')),
     path('', include('users.urls')),
     path('', include('player.urls')),
+    path('', include('pawn.urls')),
     path('admin/', admin.site.urls),
 ]

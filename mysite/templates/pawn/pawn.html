@@ -1,0 +1,31 @@
+{% extends 'base3.html' %}
+{% load static %}
+
+
+{% block head %}
+<link rel="stylesheet" href="{% static "pawn/styles/4pawn.css" %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+{% endblock %}
+
+{% block content %}
+
+    <div id="content">
+        <figure>
+            <img id="piece" src="{%static 'pawn/images/piece1.jpg'%}" alt="The Pulpit Rock" >
+            <figcaption></figcaption>
+        </figure>
+        <div class="arrow-out">
+            <p><i class="arrow left"></i> <i class="arrow right"></i></p>
+        </div>
+
+    </div>
+
+
+<script>
+var path = "{% static "pawn/images/" %}"
+</script>
+<script src="{% static "pawn/js/pawn.js" %}" >
+
+</script>
+{% endblock %}
