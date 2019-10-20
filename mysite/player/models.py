@@ -1,6 +1,8 @@
 from django.db import models
-
+from django.db.models import Avg
 # Create your models here.
+from django.conf import settings
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 class Player(models.Model):
@@ -16,3 +18,30 @@ class Player(models.Model):
     )
 
     image = models.URLField(blank=True, null=True)
+
+    @property
+    def average_rating(self):
+        return vars(type(self).objects.annotate(Avg('playerrate__rate')).filter(name=self.name)[0])['playerrate__rate__avg']
+
+    def __str__(self):
+        return self.name
+
+
+class PlayerRate(models.Model):
+        rate = models.DecimalField(max_digits=3, decimal_places=2, validators=[MinValueValidator(0), MaxValueValidator(5)])
+        player = models.ForeignKey(
+            Player,
+            on_delete=models.CASCADE,
+            blank=True, null=True
+        )
+
+        user = models.ForeignKey(
+            settings.AUTH_USER_MODEL,
+            on_delete=models.CASCADE,
+            blank=True, null=True
+        )
+
+        def __str__(self):
+            string = str(self.player.name)+" "+str(self.rate)
+            return string
+

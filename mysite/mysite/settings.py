@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'chess',
     'player',
     'pawn',
+    'rate',
     'users.apps.UsersConfig',
 ]
 

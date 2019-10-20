@@ -3,7 +3,8 @@
 {% block title %} players {% endblock %}
 
 {% block head %}
-<link rel="stylesheet" href="{% static "player/styles/1list_players.css" %}">
+<link rel="stylesheet" href="{% static "player/styles/4list_players.css" %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 {% endblock %}
 
 {% block content %}
@@ -24,10 +25,96 @@
                 </td>
 
                 <td class="container">
+                    <div class="rating">
+
+                        <p class="average_rate">{{player.average_rating}}</p>
+                        <ol>
+                            <li>
+                                <input id="a" type="radio" name="rate" value="male">
+                                <label for="a">
+                                    <img class ="star" src="{% static "player/images/star0.png" %}">
+                                </label>
+                            </li><!--
+
+                            --><li>
+                                <input id="b" type="radio" name="rate" value="male">
+                                <label for="b">
+                                    <img class ="star" src="{% static "player/images/star1.png" %}">
+                                </label>
+                            </li><!--
+
+                            --><li>
+                                <input id="c"type="radio" name="rate" value="male">
+                                <label for="c">
+                                    <img class ="star" src="{% static "player/images/star0.png" %}">
+                                </label>
+                            </li><!--
+
+                            --><li>
+                                <input id="d" type="radio" name="rate" value="male">
+                                <label for="d">
+                                    <img class ="star" src="{% static "player/images/star0.png" %}">
+                                </label>
+                            </li><!--
+
+                            --><li>
+                                <input id="e" type="radio" name="rate" value="male">
+                                <label for="e">
+                                    <img class ="star" src="{% static "player/images/star0.png" %}">
+                                </label>
+                            </li>
+                        </ol>
+
+
+
+
+                        <p>Your rate:</p>
+                        <ol class="can-change" id="0">
+                            <li>
+                                <input id="f" type="radio" name="rate" value="1">
+                                <label for="a">
+                                    <img class ="star" src="{% static "player/images/star0.png" %}">
+                                </label>
+                            </li><!--
+
+                            --><li>
+                                <input id="g" type="radio" name="rate" value="2">
+                                <label for="b">
+                                    <img class ="star" src="{% static "player/images/star0.png" %}">
+                                </label>
+                            </li><!--
+
+                            --><li>
+                                <input id="h"type="radio" name="rate" value="3">
+                                <label for="c">
+                                    <img class ="star" src="{% static "player/images/star0.png" %}">
+                                </label>
+                            </li><!--
+
+                            --><li>
+                                <input id="i" type="radio" name="rate" value="4">
+                                <label for="d">
+                                    <img class ="star" src="{% static "player/images/star0.png" %}">
+                                </label>
+                            </li><!--
+
+                            --><li>
+                                <input id="j" type="radio" name="rate" value="5">
+                                <label for="e">
+                                    <img class ="star" src="{% static "player/images/star0.png" %}">
+                                </label>
+                            </li>
+                        </ol>
+
+
+
+                        <p class="hej">co ty</p>
+
+                    </div>
 
                     <figure>
                         <img src="{{ player.image }}" alt="photo of a player" title="player">
-                        <figcaption style="text-aling: center">{{ player.name }} {{ player.surname }}</figcaption>
+                        <figcaption>{{ player.name }} {{ player.surname }}</figcaption>
                     </figure>
 
                 </td>
@@ -39,8 +126,13 @@
 
     </table>
 
+<script>
+var path = "{% static "player/images/" %}"
 
+</script>
 
+<script src="{% static "player/js/3list_players.js" %}" >
+</script>
 
 {% endblock %}
 
