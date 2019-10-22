@@ -1,0 +1,20 @@
+{% extends 'base3.html' %}
+{% block title %}Chess{% endblock %}
+
+{% block content %}
+
+    <p>Akiba</p>
+
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+
+    <hr>
+    <br>
+    <p>Magnus</p>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}

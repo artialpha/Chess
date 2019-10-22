@@ -2,9 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37486185-aee4-44de-85aa-1e435eefe5fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mysite/pawn/static/pawn/images/piece1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/pawn/static/pawn/images/piece2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/pawn/static/pawn/images/piece3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/pawn/static/pawn/images/piece4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/pawn/static/pawn/images/piece5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/pawn/static/pawn/images/piece6.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mysite/pawn/static/pawn/js/1pawn.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mysite/pawn/static/pawn/styles/3pawn.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/player/static/player/js/3list_players.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/player/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/player/migrations/0005_player_averate_rate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/player/migrations/0006_remove_player_averate_rate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/player/migrations/0007_playerrate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/player/static/player/images/rate.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/player/static/player/images/star0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/player/static/player/images/star1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/player/static/player/images/unrate.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/player/static/player/js/6list_players.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/rate/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/rate/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/rate/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/rate/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/rate/migrations/0002_auto_20191018_2343.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/rate/migrations/0003_auto_20191018_2355.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/rate/migrations/0004_delete_playerrate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/rate/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/rate/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/rate/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/rate/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/templates/player/add_rate.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
@@ -13,9 +39,11 @@
       <change beforePath="$PROJECT_DIR$/mysite/player/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/player/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/player/static/player/styles/1list_players.css" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/player/static/player/styles/4list_players.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/player/static/player/styles/list_players.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/player/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/player/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/player/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/player/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/templates/pawn/pawn.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/pawn/pawn.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/templates/player/list_players.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/player/list_players.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/users/forms.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,17 +59,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/templates/player/list_players.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="71" column="54" lean-forward="true" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
+            <state relative-caret-position="35">
+              <caret line="71" column="40" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mysite/player/static/player/js/3list_players.js">
+        <entry file="file://$PROJECT_DIR$/mysite/player/static/player/js/6list_players.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="170">
+              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/player/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mysite/player/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -51,8 +103,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -67,7 +119,11 @@
       <find>posts</find>
       <find>templateta</find>
       <find>import</find>
+      <find>register</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\Users\Dymitr\PycharmProjects\django\mysite\templates</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/mysite" />
@@ -75,14 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mysite/chess/static/chess/styles/style5.css" />
-        <option value="$PROJECT_DIR$/mysite/chess/static/chess/styles/5style.css" />
-        <option value="$PROJECT_DIR$/mysite/player/static/player/styles/7list_players.css" />
-        <option value="$PROJECT_DIR$/mysite/player/static/player/styles/list_players.css" />
-        <option value="$PROJECT_DIR$/mysite/templates/player/1list_players.html" />
-        <option value="$PROJECT_DIR$/mysite/templates/users/login.html" />
-        <option value="$PROJECT_DIR$/mysite/users/static/users/styles/1login.css" />
-        <option value="$PROJECT_DIR$/mysite/templates/users/register.html" />
         <option value="$PROJECT_DIR$/mysite/chess/views.py" />
         <option value="$PROJECT_DIR$/mysite/chess/static/chess/styles/3list_chess_open.css" />
         <option value="$PROJECT_DIR$/mysite/chess/static/chess/styles/4list_chess_open.css" />
@@ -120,12 +168,20 @@
         <option value="$PROJECT_DIR$/mysite/rate/models.py" />
         <option value="$PROJECT_DIR$/mysite/rate/admin.py" />
         <option value="$PROJECT_DIR$/mysite/player/admin.py" />
-        <option value="$PROJECT_DIR$/mysite/player/views.py" />
-        <option value="$PROJECT_DIR$/mysite/player/models.py" />
         <option value="$PROJECT_DIR$/mysite/player/static/player/js/1list_players.js" />
         <option value="$PROJECT_DIR$/mysite/player/static/player/js/2list_players.js" />
-        <option value="$PROJECT_DIR$/mysite/templates/player/list_players.html" />
+        <option value="$PROJECT_DIR$/mysite/users/forms.py" />
+        <option value="$PROJECT_DIR$/mysite/player/urls.py" />
+        <option value="$PROJECT_DIR$/mysite/player/forms.py" />
+        <option value="$PROJECT_DIR$/mysite/templates/player/add_rate.html" />
         <option value="$PROJECT_DIR$/mysite/player/static/player/js/3list_players.js" />
+        <option value="$PROJECT_DIR$/mysite/player/models.py" />
+        <option value="$PROJECT_DIR$/mysite/player/static/player/js/4list_players.js" />
+        <option value="$PROJECT_DIR$/mysite/player/views.py" />
+        <option value="$PROJECT_DIR$/mysite/player/templatetags/player_tags.py" />
+        <option value="$PROJECT_DIR$/mysite/player/static/player/js/5list_players.js" />
+        <option value="$PROJECT_DIR$/mysite/templates/player/list_players.html" />
+        <option value="$PROJECT_DIR$/mysite/player/static/player/js/6list_players.js" />
       </list>
     </option>
   </component>
@@ -189,12 +245,6 @@
               <item name="player" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django" type="462c0819:PsiDirectoryNode" />
-              <item name="mysite" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -211,10 +261,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\player\static\player\js" />
+      <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\templates\player" />
       <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\player\static\player\styles" />
       <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\pawn\static\pawn\styles" />
       <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\pawn\static\pawn\js" />
-      <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\chess\static\chess\styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dymitr\PycharmProjects\django\mysite\pawn\static\pawn\images" />
@@ -447,8 +497,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.8556548" visible="true" weight="0.3502455" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.14434524" side_tool="true" visible="true" weight="0.3502455" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.8526786" visible="true" weight="0.4222586" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.14732143" side_tool="true" visible="true" weight="0.4222586" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -479,70 +529,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="profile and href in debuts" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mysite/runtime.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/Procfile.windows">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/Procfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/db.sqlite3">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#84#93#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/chess/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/templates/chess/create_chess_opening.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/templates/admin/chess_open_add.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/chess/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/pawn/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/chess/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -630,20 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/templates/chess/list_chess_opening.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/templates/chess/chess_board.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/templates/chess/single_chess_opening.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-102">
@@ -658,9 +630,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/users/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/users/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/rate/views.py">
@@ -678,16 +647,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/mysite/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-          <folding>
-            <element signature="e#307#316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/rate/admin.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -713,51 +672,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/player/views.py">
+    <entry file="file://$PROJECT_DIR$/mysite/player/static/player/js/1list_players.js" />
+    <entry file="file://$PROJECT_DIR$/mysite/player/static/player/js/2list_players.js" />
+    <entry file="file://$PROJECT_DIR$/mysite/templates/users/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="-110" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
           <folding>
-            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/player/models.py">
+    <entry file="file://$PROJECT_DIR$/mysite/users/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/users/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/player/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/player/static/player/js/1list_players.js">
+    <entry file="file://$PROJECT_DIR$/mysite/templates/player/add_rate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/player/static/player/js/2list_players.js">
+    <entry file="file://$PROJECT_DIR$/mysite/player/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="153">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/templates/player/list_players.html">
+    <entry file="file://$PROJECT_DIR$/mysite/templates/users/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="71" column="54" lean-forward="true" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
+        <state relative-caret-position="238">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/player/static/player/js/3list_players.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="109">
+          <caret line="19" selection-start-line="19" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/player/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/templates/chess/create_chess_opening.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/templates/chess/list_chess_opening.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/templates/chess/chess_board.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2483">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/player/static/player/js/4list_players.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/player/templatetags/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/player/templatetags/player_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1412">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <folding>
+            <element signature="e#307#316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/player/static/player/js/5list_players.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/player/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/templates/player/list_players.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="71" column="40" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/player/static/player/js/6list_players.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
         </state>
       </provider>
     </entry>

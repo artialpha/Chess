@@ -24,7 +24,7 @@ class Player(models.Model):
         return vars(type(self).objects.annotate(Avg('playerrate__rate')).filter(name=self.name)[0])['playerrate__rate__avg']
 
     def __str__(self):
-        return self.name
+        return self.name+" "+str(self.id)
 
 
 class PlayerRate(models.Model):
@@ -42,6 +42,6 @@ class PlayerRate(models.Model):
         )
 
         def __str__(self):
-            string = str(self.player.name)+" "+str(self.rate)
+            string = str(self.player.name)+" "+str(self.rate)+" "+str(self.user.username)
             return string
 
