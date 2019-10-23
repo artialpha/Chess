@@ -1,4 +1,7 @@
+from django.core.exceptions import ObjectDoesNotExist
+import json
 from django.http import HttpResponse, JsonResponse
+from django.db.models import Avg
 from django.shortcuts import render
 from .models import Player
 from .models import PlayerRate
@@ -14,18 +17,24 @@ def get_player(request):
         'players': players,
     }
     if request.method == 'POST':
-        print("tutaj")
-        print(request.POST['name'])
-        print(request.POST['rate'])
-        print(request.user)
-        PlayerRate.objects.create(
-            rate=request.POST['rate'],
-            player=Player.objects.get(name=request.POST['name']),
-            user=request.user,
-        )
+        try:
+            check_rate = PlayerRate.objects.get(user=request.user, player=Player.objects.get(name=request.POST['name']))
+            check_rate.rate = request.POST['rate']
+            check_rate.save()
+            average_rate = float(vars(Player.objects.annotate(Avg('playerrate__rate')).filter(name=request.POST['name'])[0])['playerrate__rate__avg'])
+            dictionary = {'average': average_rate}
+            dictionary = json.dumps(dictionary)
+            print(dictionary)
+            return HttpResponse(dictionary, content_type="application/json")
+        except ObjectDoesNotExist:
+            check_rate.rate = request.POST['rate']
+            check_rate.save()
+
+    #if request.method == 'GET':
+        #print("GET")
+
 
     if request.user.is_authenticated:
-        print(request.user)
         user_rate = PlayerRate.objects.filter(user=request.user).order_by('player__name')
         context['user_rate'] = user_rate
         user_rate = {x.player.name:int(x.rate) for x in user_rate }
@@ -43,7 +52,6 @@ def get_player(request):
 def add_rate(request):
 
     if request.method == 'POST':
-        print("tutaj")
         form = PlayerRateForm(request.POST)
         if form.is_valid():
             post = form.save(commit=False)

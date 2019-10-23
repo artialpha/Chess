@@ -48,10 +48,12 @@ $(document).ready(function(){
         setStar(1, this);
     })
 
+    var element;
     $("ol.can-change li").click(function(){
         var rate = parseInt($(this).index());
         var name = $(this).parent().parent().parent().next().children().eq(1).text();
         name = name.trim().split(" ")[0];
+        element = $(this);
         // $(this).parent().parent().parent().next().children().eq(1).text(); zwraca imie i nazwisko
         //$(this).parent().parent().parent().parent().children().get(); zwraca dwojke dzieci od TD
         $.post('/players',
@@ -60,14 +62,25 @@ $(document).ready(function(){
             rate:rate,
             csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val()
         },
-        function(){
-            alert("Data: " +  "\nStatus: " );
+        function(data){
+            var paragraph = element.closest('ol').prev(); // at first paragraph "your rate"
+            var whole_text = paragraph.text();
+            var text_changed = whole_text.slice(0,whole_text.length-1);
+            text_changed += element.index();
+            paragraph.text(text_changed);
+
+
+            paragraph = paragraph.siblings('.average_rate'); // paragraph "averate rate"
+            paragraph.text(data['average']);
+            var star = paragraph.next();
+            element = star.find('li').eq(Math.floor(data['average'])-1).get();
+            //alert(star.find('li').eq(Math.floor(data['average'])).get());
+            setStar(1,element );
+            console.log(data);
         }
         );
 
-        $.get('/players', function( ){
-            alert("Data: " +  "\nStatus: " );
-        });
+
 
 
     });
