@@ -57,12 +57,20 @@ class ChessOpening(models.Model):
             dictionary[i[0].capitalize() + str(i[1])] = i[2]
         return dictionary
 
-    def create_chess_board(self):
+    def create_chess_board(self, epd):
         mylist = []
-        for index, line in enumerate(self.epd.split('/')):
+        for index, line in enumerate(epd.split('/')):
             mylist.append(self.get_position(line, 8 - index))
         mylist = self.chess_dictionary(itertools.chain.from_iterable(mylist))
         return mylist
+
+    def start_position(self):
+        return self.create_chess_board("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR")
+
+    def number_to_algebraic(self):
+        alg_with_numbers = self.algebraic_notation.split(" ")
+        alg_with_numbers = [str(i+1)+". "+e for i,e in enumerate(alg_with_numbers)]
+        return alg_with_numbers
 
 
 

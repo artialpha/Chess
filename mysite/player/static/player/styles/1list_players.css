@@ -1,0 +1,109 @@
+
+section{
+    overflow: overlay;
+    background-color: silver;
+    width: 100%;
+}
+
+.row {
+    padding: 2%;
+    background-color: #E6E6EA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+
+
+.description{
+    float: left;
+    width: 40%;
+    background-color: #F7F7F7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px grey;
+}
+
+.favorite{
+    text-align: center;
+}
+
+.favorite.name{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.favorite.text{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.container{
+    margin: 2%;
+    float: right;
+    width: 20%;
+    background-color: inherit;
+}
+
+.container img{
+    width: 150%;
+    border-radius: 20px;
+}
+
+figure figcaption {
+    width: 150%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rating {
+    width: 150%;
+    border: 5px solid black;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #7C7A7A;
+    border-radius: 40px;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+
+
+ol li {
+    display:inline-block;
+    vertical-align: top;
+    border-top: 3px solid black;
+      border-bottom: 3px solid black;
+}
+
+ol li:first-child {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+}
+
+ol li:last-child {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+}
+
+label > img {
+    max-width: 50px;
+}
+
+.user, .average_rate {
+    margin: 8px 0px 5px 0px;
+    font-size: 20px;
+    color: #E5E4E4;
+}

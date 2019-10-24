@@ -2,16 +2,19 @@
 #content {
     position: relative;
     padding: 20px;
-    border: 1px solid red;
+    border: 5px solid black;
     margin: auto;
     width: 70%;
     height: 800px;
+    background-color: #D8D6E5;
 }
 
 figure {
     width: 75%;
     margin: auto;
-    border: 1px solid yellow;
+    border: 3px solid grey;
+    border-radius: 30px;
+    background: white;
 }
 
 #image-div{
@@ -20,14 +23,11 @@ figure {
 }
 
 #image-div > img {
-    border: 3px solid green;
     width: 100%;
 }
 
 
 .arrow-out{
-    margin-top: 20px;
-    border: 1px solid blue;
     height: 50px;
       text-align: center;
 }
@@ -37,6 +37,8 @@ i {
   border-width: 0 10px 10px 0;
   display: inline-block;
   padding: 10px;
+  position: relative;
+  top: -10px;
 
 }
 
@@ -52,7 +54,6 @@ i {
 
 p {
     font-size: 20px;
-    margin-top: 15px;
     padding: 20px;
 }
 

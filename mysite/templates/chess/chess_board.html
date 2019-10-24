@@ -5,6 +5,7 @@
 
 {% block head %}
 <link rel="stylesheet" href="{% static "chess/styles/1chess_board.css" %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 {% block headsingle %}{% endblock %}
 {% endblock %}
 
@@ -156,14 +157,13 @@
 
     </table>
 
+{% block algebraic %}{% endblock %}
+
+
 <script type="text/javascript">
 
-    function myFunction() {
-        {% for key, value in position.items %}
-            document.getElementById("{{ key }}").innerHTML = "{{ value|safe }}";
-        {% endfor %}
-    }
-    myFunction();
+
+
 </script>
 
 {% endblock %}

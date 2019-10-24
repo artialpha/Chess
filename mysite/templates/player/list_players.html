@@ -4,7 +4,7 @@
 {% block title %} players {% endblock %}
 
 {% block head %}
-<link rel="stylesheet" href="{% static "player/styles/4list_players.css" %}">
+<link rel="stylesheet" href="{% static "player/styles/1list_players.css" %}">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 {% endblock %}
 
@@ -69,11 +69,10 @@
 
 
                         {% if user.is_authenticated %}
-                        <p class="user">Your rate: {{ player.name }} {{ user_rate|lookup:player.name }}</p>
+                        <p class="user">Your rate: {{ player.name }}{% if user_rate|in:player.name %} {{ user_rate|lookup:player.name }}{% else %} 0{% endif %}</p>
                         {% endif %}
                         <ol class="can-change" id="0">
-                            <form  id="form-rate" method="post">
-                                {% csrf_token %}
+
 
                                 <li>
                                     <input id="f" type="radio" name="rate" value="1">
@@ -109,13 +108,12 @@
                                         <img class ="star" src="{% static "player/images/star0.png" %}">
                                     </label>
                                 </li>
-                            </form>
 
                         </ol>
 
 
 
-                        <p class="hej">co ty</p>
+                        <p class="hej">co ty</p> <!-- to musze ogarnac, tego ma nie byc, po co robilem to w js  -->
 
                     </div>
 
@@ -135,14 +133,9 @@
 
 <script>
 var path = "{% static "player/images/" %}";
-
-
-
-
-
 </script>
 
-<script src="{% static "player/js/7list_players.js" %}" >
+<script src="{% static "player/js/2list_players.js" %}" >
 </script>
 
 {% endblock %}

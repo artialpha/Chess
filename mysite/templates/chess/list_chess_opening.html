@@ -3,7 +3,8 @@
 {% block title %}list chess opening{% endblock %}
 
 {% block head %}
-<link rel="stylesheet" href="{% static "chess/styles/5list_chess_open.css" %}">
+<link rel="stylesheet" href="{% static "chess/styles/2list_chess_open.css" %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 {% endblock %}
 
 {% block content %}
@@ -21,10 +22,9 @@
 
         <div class="search">
             <p>Search a chess opening:</p>
-            <form action="/my/link/location" method="get">
-                <input type="submit" value="Go to my link location"
-                     name="Submit" id="frm1_submit" />
-            </form>
+            {% csrf_token %}
+            <input type="text" class="text">
+            <input type="button" class="button_active" value="open chess opening" />
         </div>
 
         <table class="content-table">
@@ -37,7 +37,6 @@
             </thead>
 
             <tbody>
-
 
                 {% for group in chess_open %}
                     <tr>
@@ -57,9 +56,11 @@
 
 
                 {% endfor %}
+
             </tbody>
 
         </table>
     </section>
-
+<script src="{% static "chess/js/2list_chess_opening.js" %}" >
+</script>
 {% endblock %}

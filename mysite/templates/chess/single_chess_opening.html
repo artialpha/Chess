@@ -4,7 +4,8 @@
 {% block title %}chess opening{% endblock %}
 
 {% block headsingle %}
-<link rel="stylesheet" href="{% static "chess/styles/2single_open.css" %}">
+<link rel="stylesheet" href="{% static "chess/styles/1single_open.css" %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 {% endblock %}
 
 {% block rest %}
@@ -17,20 +18,40 @@
             {{ eco }}
         </h2>
 
-        <div class="description">
-            {{ description }}
-        </div>
-
-        <div class="notation">
-            {{ algebraic_notation }}
-        </div>
 
 
     </section>
-
-
-
 {% endblock %}
+{% block algebraic %}
+    <p><strong id="start">start</strong></p>
+    <div class="notation">
+        {% for one_move in algebraic_notation %}
+           <strong class="move">{{one_move}}</strong>
+        {% endfor %}
+
+    </div>
+<script>
+    var start_position = [
+          {% for k, v in start_position.items %}
+              ["{{ k }}","{{ v|safe }}"] {% if not forloop.last %},{% endif %}
+          {% endfor %}
+    ];
+
+    var final_position = [
+          {% for k, v in position.items %}
+              ["{{ k }}","{{ v|safe }}"] {% if not forloop.last %},{% endif %}
+          {% endfor %}
+    ];
+</script>
+<script src="{% static "chess/js/2single_chess_opening.js" %}" >
+</script>
+{% endblock %}
+
+
+
+
+
+
 
 
 

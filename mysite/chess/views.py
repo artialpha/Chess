@@ -1,5 +1,5 @@
 import itertools
-
+import json
 from django.http import HttpResponse
 from django.shortcuts import render
 from mysite import settings
@@ -52,18 +52,29 @@ def list_chess_opening(request):
         'e_open': e_open,
     }
 
+    if request.method == 'POST':
+        print("dziala post ")
+        print(request.POST['open_name'])
+        open_id = ChessOpening.objects.all().get(name=request.POST['open_name']).id
+        dictionary = {'open_id': open_id}
+        dictionary = json.dumps(dictionary)
+        return HttpResponse(dictionary, content_type="application/json")
+
     return render(request, 'chess/list_chess_opening.html', context)
 
 
 def chess_opening(request, open_id):
     chess_open = ChessOpening.objects.get(pk=open_id)
-    list_of_positions = chess_open.create_chess_board()
+    list_of_positions = chess_open.create_chess_board(chess_open.epd)
+    start_position = chess_open.start_position()
+
     context = {
         'name': chess_open.name,
         'description': chess_open.description,
         'eco': chess_open.eco,
         'position': list_of_positions,
-        'algebraic_notation': chess_open.algebraic_notation
+        'start_position': start_position,
+        'algebraic_notation': chess_open.number_to_algebraic()
     }
     return render(request, 'chess/single_chess_opening.html', context)
 
