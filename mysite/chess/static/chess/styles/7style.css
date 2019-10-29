@@ -11,8 +11,8 @@ section{
 }
 
 body {
-    background-color: dimgrey;
-        position: relative;
+    background-image: url("https://cdn.pixabay.com/photo/2016/07/12/11/39/checkmate-1511866_960_720.jpg");
+    position: relative;
     z-index: 10;
 
 }

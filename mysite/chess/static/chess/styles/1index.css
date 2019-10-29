@@ -1,0 +1,12 @@
+#index {
+    padding: 30px;
+
+}
+
+p {
+    margin-top: 20px;
+    background-color: #EEEEEE;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
