@@ -8,7 +8,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 {% endblock %}
 
-{% block rest %}
+{% block eco %}
     <section>
         <h1>
             {{ name }}
@@ -17,19 +17,40 @@
         <h2>
             {{ eco }}
         </h2>
-
-
-
     </section>
 {% endblock %}
-{% block algebraic %}
-    <p><strong id="start">start</strong></p>
-    <div class="notation">
-        {% for one_move in algebraic_notation %}
-           <strong class="move">{{one_move}}</strong>
-        {% endfor %}
+
+{% block after %}
+<div id="table-wrapper" class="div2">
+    <div id="table-scroll"class="notation">
+        <table id="moves">
+
+            <tbody>
+                <tr>
+                    <td class="move">
+                        start
+                    </td>
+                </tr>
+                {% for one_move in algebraic_notation %}
+                    <tr>
+                        <td class="move">{{one_move}}</td>
+                    </tr>
+                {% endfor %}
+
+
+            </tbody>
+        </table>
+
 
     </div>
+</div>
+{% endblock %}
+
+{% block algebraic %}
+    <div class="arrow-out">
+            <p><i class="arrow left"></i><i class="arrow right"></i></p>
+    </div>
+
 <script>
     var start_position = [
           {% for k, v in start_position.items %}

@@ -1,13 +1,10 @@
-section {
-    margin: 10px;
-}
+
 
 h1 {
     background-color: DarkSlateGray;
     text-align: center;
     font-size: 30px;
     color: white;
-    border-radius: 10px 10px 0px 0px;
 }
 
 h2  {
@@ -21,10 +18,8 @@ h2  {
 }
 
 .notation {
-    text-align: center;
-    padding: 20px 0px 100px 0px;
-    font-size: 20px;
-    margin: auto;
+
+
 }
 .notation p {
     margin-bottom: 10px;
@@ -32,16 +27,55 @@ h2  {
 
 p {
     text-align: center;
-    margin-top: 20px;
 }
 
-p > strong {
-    font-size: 20px;
-}
 
 .move {
     padding: 10px;
     border: 1px solid black;
     border-radius: 10px;
     background-color: #ECECEC;
+    font-size: 25px;
 }
+
+.arrow-out{
+    margin-top: 30px;
+    height: 50px;
+    text-align: center;
+}
+
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+i {
+  border: solid black;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  top: -10px;
+
+}
+
+#moves {
+    width: 70%;
+}
+
+#table-wrapper {
+    position:relative;
+}
+#table-scroll {
+    width: 230px;
+  height:800px;
+  overflow:auto;
+  margin-top:20px;
+}
+

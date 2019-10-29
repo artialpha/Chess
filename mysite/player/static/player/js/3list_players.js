@@ -29,8 +29,11 @@ $(document).ready(function(){
     // responsible for user's rate
     $(".user").each(function(){
         number_stars = parseInt($(this).text().split(" ")[3]);
-        li_element = $(this).next().find('li').eq(number_stars-1).get();
-        setStar(1, li_element)
+        if (number_stars !== 0 ){
+            li_element = $(this).next().find('li').eq(number_stars-1).get();
+            setStar(1, li_element)
+        }
+
     })
 
 
@@ -72,8 +75,9 @@ $(document).ready(function(){
             paragraph.text(text_changed);
 
 
-            paragraph = paragraph.siblings('.average_rate'); // paragraph "averate rate"
-            paragraph.text(data['average']);
+            paragraph = paragraph.siblings('.average_rate'); // paragraph "average rate"
+            //paragraph.text(data['average'].toFixed(2));
+            paragraph.text(Math.round(data['average']*100)/100);
             var star = paragraph.next();
             element = star.find('li').eq(Math.floor(data['average'])-1).get();
             //alert(star.find('li').eq(Math.floor(data['average'])).get());

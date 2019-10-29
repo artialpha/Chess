@@ -28,7 +28,7 @@
                 <td class="container">
                     <div class="rating">
 
-                        <p class="average_rate">{{player.average_rating}}</p>
+                        <p class="average_rate">{{player.average_rating|myformat}}</p>
                         <ol>
                             <li>
                                 <input id="a" type="radio" name="rate" value="male">
@@ -135,7 +135,7 @@
 var path = "{% static "player/images/" %}";
 </script>
 
-<script src="{% static "player/js/2list_players.js" %}" >
+<script src="{% static "player/js/3list_players.js" %}" >
 </script>
 
 {% endblock %}

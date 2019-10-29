@@ -1,15 +1,27 @@
 
+.table-container{
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+    margin: auto;
+    width: 90%;
+
+    padding: 40px;
+}
+
+
 table.chess {
     border-collapse: collapse;
+    display: table;
     margin: 0 auto;
-
 }
 
 .field{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     text-align: center;
-    font-size: 45px;
+    font-size: 55px;
     border: 2px solid black;
 }
 

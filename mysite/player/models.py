@@ -28,7 +28,7 @@ class Player(models.Model):
 
 
 class PlayerRate(models.Model):
-        rate = models.DecimalField(max_digits=3, decimal_places=2, validators=[MinValueValidator(0), MaxValueValidator(5)])
+        rate = models.IntegerField(validators=[MinValueValidator(0), MaxValueValidator(5)])
         player = models.ForeignKey(
             Player,
             on_delete=models.CASCADE,

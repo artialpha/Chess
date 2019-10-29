@@ -1,0 +1,50 @@
+{% extends 'chess/chess_board.html' %}
+{% load static %}
+{% block headsingle %}
+<link rel="stylesheet" href="{% static "chess/styles/2chess_board_epd.css" %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+{% endblock %}
+{% block before %}
+    <div class="pawns">
+        <ul>
+
+            <li id ="b-king">&#9818;</li>
+            <li id ="b-queen">&#9819;</li>
+            <li id ="b-rook">&#9820;</li>
+            <li id ="b-bishop">&#9821;</li>
+            <li id ="b-knight">&#9822;</li>
+            <li id ="b-pawn">&#9823;</li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block after %}
+    <div class="pawns">
+        <ul>
+            <li id ="w-king">&#9812;</li>
+            <li id ="w-queen">&#9813;</li>
+            <li id ="w-rook">&#9814;</li>
+            <li id ="w-bishop">&#9815;</li>
+            <li id ="w-knight">&#9816;</li>
+            <li id ="w-pawn">&#9817;</li>
+        </ul>
+
+    </div>
+
+{% endblock %}
+
+{% block algebraic %}
+
+<div id="option">
+    <p class="option element">Enter or paste a EPD/FEN string</p>
+    <input autocomplete="off" class="option element" type="text" ><br>
+    <button id="clear-button" class="option element" type="button">Clear board</button>
+    <button id="get-button" class="option element" type="button">Get EPD</button>
+    <button id="set-button" class="option element" type="button">Set EPD</button>
+</div>
+
+
+
+<script src="{% static "chess/js/chess_board_epd.js" %}" >
+</script>
+{% endblock %}

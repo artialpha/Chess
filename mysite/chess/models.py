@@ -10,34 +10,36 @@ class ChessOpening(models.Model):
     epd = models.CharField(max_length=200, default="null")
     algebraic_notation = models.CharField(max_length=200, default="null")
 
-    def translate(self, char):
+    @classmethod
+    def translate(cls, char):
         if char == 'k':
-            return '&#9818;'
+            return '♚'
         if char == 'q':
-            return '&#9819;'
+            return '♛'
         if char == 'r':
-            return '&#9820;'
+            return '♜'
         if char == 'b':
-            return '&#9821;'
+            return '♝'
         if char == 'n':
-            return '&#9822;'
+            return '♞'
         if char == 'p':
-            return '&#9823;'
+            return '♟'
 
         if char == 'K':
-            return '&#9812;'
+            return '♔'
         if char == 'Q':
-            return '&#9813;'
+            return '♕'
         if char == 'R':
-            return '&#9814;'
+            return '♖'
         if char == 'B':
-            return '&#9815;'
+            return '♗'
         if char == 'N':
-            return '&#9816;'
+            return '♘'
         if char == 'P':
-            return '&#9817;'
+            return '♙'
 
-    def get_position(self, string, line):
+    @classmethod
+    def get_position(cls, string, line):
         uni = 97
         index = 0
         list_out = []
@@ -46,26 +48,29 @@ class ChessOpening(models.Model):
             if char.isdigit():
                 index += int(char)
             else:
-                list_out.append((chr(index + uni), line, self.translate(char)))
+                list_out.append((chr(index + uni), line, cls.translate(char)))
                 index += 1 if index < 8 else index
         return list_out
 
-    def chess_dictionary(self, mylist):
+    @staticmethod
+    def chess_dictionary(mylist):
         dictionary = {}
         for i in mylist:
             # print(i)
             dictionary[i[0].capitalize() + str(i[1])] = i[2]
         return dictionary
 
-    def create_chess_board(self, epd):
+    @classmethod
+    def create_chess_board(cls, epd):
         mylist = []
         for index, line in enumerate(epd.split('/')):
-            mylist.append(self.get_position(line, 8 - index))
-        mylist = self.chess_dictionary(itertools.chain.from_iterable(mylist))
+            mylist.append(cls.get_position(line, 8 - index))
+        mylist = cls.chess_dictionary(itertools.chain.from_iterable(mylist))
         return mylist
 
-    def start_position(self):
-        return self.create_chess_board("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR")
+    @classmethod
+    def start_position(cls):
+        return cls.create_chess_board("rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR")
 
     def number_to_algebraic(self):
         alg_with_numbers = self.algebraic_notation.split(" ")

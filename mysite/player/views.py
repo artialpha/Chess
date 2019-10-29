@@ -40,18 +40,12 @@ def get_player(request):
             dictionary = json.dumps(dictionary)
             return HttpResponse(dictionary, content_type="application/json")
 
-
-
-
-
     user_rate = PlayerRate.objects.filter(user=request.user).order_by('player__name')
     context['user_rate'] = user_rate
     user_rate = {x.player.name:int(x.rate) for x in user_rate }
     user_rate = json.dumps(user_rate, indent=4)
     user_rate = json.loads(user_rate)
     context['user_rate'] = user_rate
-
-
 
     return render(request, 'player/list_players.html', context)
 
@@ -64,8 +58,6 @@ def add_rate(request):
             post = form.save(commit=False)
             post.user = request.user
             post.save()
-            print(form)
-            print(post)
             return redirect('players')
     else:
         form = PlayerRateForm()

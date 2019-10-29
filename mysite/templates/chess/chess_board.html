@@ -4,160 +4,180 @@
 {% block title %}chess board{% endblock %}
 
 {% block head %}
-<link rel="stylesheet" href="{% static "chess/styles/1chess_board.css" %}">
+<link rel="stylesheet" href="{% static "chess/styles/2chess_board.css" %}">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 {% block headsingle %}{% endblock %}
 {% endblock %}
 
 
+
 {% block content %}
-{% block rest %}{% endblock %}
+{% block eco %}{% endblock %}
 
-
-    <table class="chess">
-        <thead>
-           <tr class="letters">
-                <td></td>
-                <td>A</td>
-                <td>B</td>
-                <td>C</td>
-                <td>D</td>
-                <td>E</td>
-                <td>F</td>
-                <td>G</td>
-                <td>H</td>
-
-           </tr>
-
-        </thead>
-
-        <tbody>
-
-            <tr>
-                <td bgcolor="white" class="numbers">8</td>
-                <td bgcolor="white" id="A8" class="field"></td>
-                <td bgcolor="grey" id="B8" class="field"></td>
-                <td bgcolor="white" id="C8" class="field"></td>
-                <td bgcolor="grey" id="D8" class="field"></td>
-                <td bgcolor="white" id="E8" class="field"></td>
-                <td bgcolor="grey" id="F8" class="field"></td>
-                <td bgcolor="white" id="G8" class="field"></td>
-                <td bgcolor="grey" id="H8" class="field"></td>
-                <td bgcolor="white" class="numbers">8</td>
-
-            </tr>
-
-            <tr>
-                <td bgcolor="white" class="numbers">7</td>
-                <td bgcolor="grey" id="A7" class="field"></td>
-                <td bgcolor="white" id="B7" class="field"></td>
-                <td bgcolor="grey" id="C7" class="field"></td>
-                <td bgcolor="white" id="D7" class="field"></td>
-                <td bgcolor="grey" id="E7" class="field"></td>
-                <td bgcolor="white" id="F7" class="field"></td>
-                <td bgcolor="grey" id="G7" class="field"></td>
-                <td bgcolor="white" id="H7" class="field"></td>
-                <td bgcolor="white" class="numbers">7</td>
-            </tr>
-
-            <tr>
-                <td bgcolor="white" class="numbers">6</td>
-                <td bgcolor="white" id="A6" class="field"></td>
-                <td bgcolor="grey" id="B6" class="field"></td>
-                <td bgcolor="white" id="C6" class="field"></td>
-                <td bgcolor="grey" id="D6" class="field"></td>
-                <td bgcolor="white" id="E6" class="field"></td>
-                <td bgcolor="grey" id="F6" class="field"></td>
-                <td bgcolor="white" id="G6" class="field"></td>
-                <td bgcolor="grey" id="H6" class="field"></td>
-                <td bgcolor="white" class="numbers">6</td>
-            </tr>
-
-            <tr>
-                <td bgcolor="white" class="numbers">5</td>
-                <td bgcolor="grey" id="A5" class="field"></td>
-                <td bgcolor="white" id="B5" class="field"></td>
-                <td bgcolor="grey" id="C5" class="field"></td>
-                <td bgcolor="white" id="D5" class="field"></td>
-                <td bgcolor="grey" id="E5" class="field"></td>
-                <td bgcolor="white" id="F5" class="field"></td>
-                <td bgcolor="grey" id="G5" class="field"></td>
-                <td bgcolor="white" id="H5" class="field"></td>
-                <td bgcolor="white" class="numbers">5</td>
-            </tr>
-
-            <tr>
-                <td bgcolor="white" class="numbers">4</td>
-                <td bgcolor="white" id="A4" class="field"></td>
-                <td bgcolor="grey" id="B4" class="field"></td>
-                <td bgcolor="white" id="C4" class="field"></td>
-                <td bgcolor="grey" id="D4" class="field"></td>
-                <td bgcolor="white" id="E4" class="field"></td>
-                <td bgcolor="grey" id="F4" class="field"></td>
-                <td bgcolor="white" id="G4" class="field"></td>
-                <td bgcolor="grey" id="H4" class="field"></td>
-                <td bgcolor="white" class="numbers">4</td>
-            </tr>
-
-            <tr>
-                <td bgcolor="white" class="numbers">3</td>
-                <td bgcolor="grey" id="A3" class="field"></td>
-                <td bgcolor="white" id="B3" class="field"></td>
-                <td bgcolor="grey" id="C3" class="field"></td>
-                <td bgcolor="white" id="D3" class="field"></td>
-                <td bgcolor="grey" id="E3" class="field"></td>
-                <td bgcolor="white" id="F3" class="field"></td>
-                <td bgcolor="grey" id="G3" class="field"></td>
-                <td bgcolor="white" id="H3" class="field"></td>
-                <td bgcolor="white" class="numbers">3</td>
-            </tr>
-
-            <tr>
-                <td bgcolor="white" class="numbers">2</td>
-                <td bgcolor="white" id="A2" class="field"></td>
-                <td bgcolor="grey" id="B2" class="field"></td>
-                <td bgcolor="white" id="C2" class="field"></td>
-                <td bgcolor="grey" id="D2" class="field"></td>
-                <td bgcolor="white" id="E2" class="field"></td>
-                <td bgcolor="grey" id="F2" class="field"></td>
-                <td bgcolor="white" id="G2" class="field"></td>
-                <td bgcolor="grey" id="H2" class="field"></td>
-                <td bgcolor="white" class="numbers">2</td>
-            </tr>
-
-            <tr>
-                <td bgcolor="white" class="numbers">1</td>
-                <td bgcolor="grey" id="A1" class="field"></td>
-                <td bgcolor="white" id="B1" class="field"></td>
-                <td bgcolor="grey" id="C1" class="field"></td>
-                <td bgcolor="white" id="D1" class="field"></td>
-                <td bgcolor="grey" id="E1" class="field"></td>
-                <td bgcolor="white" id="F1" class="field"></td>
-                <td bgcolor="grey" id="G1" class="field"></td>
-                <td bgcolor="white" id="H1" class="field"></td>
-                <td bgcolor="white" class="numbers">1</td>
-            </tr>
-
-           <tr class="letters">
-                <td></td>
-                <td>A</td>
-                <td>B</td>
-                <td>C</td>
-                <td>D</td>
-                <td>E</td>
-                <td>F</td>
-                <td>G</td>
-                <td>H</td>
-
-           </tr>
+<div id="content">
 
 
 
-        </tbody>
+    <div class="table-container">
 
-    </table>
+    {% block before %}{% endblock %}
 
-{% block algebraic %}{% endblock %}
+
+        <table class="chess">
+
+            <thead>
+               <tr class="letters">
+                    <td></td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                    <td>H</td>
+
+               </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td bgcolor="white" class="numbers">8</td>
+                    <td bgcolor="white" id="A8" class="field"></td>
+                    <td bgcolor="grey" id="B8" class="field"></td>
+                    <td bgcolor="white" id="C8" class="field"></td>
+                    <td bgcolor="grey" id="D8" class="field"></td>
+                    <td bgcolor="white" id="E8" class="field"></td>
+                    <td bgcolor="grey" id="F8" class="field"></td>
+                    <td bgcolor="white" id="G8" class="field"></td>
+                    <td bgcolor="grey" id="H8" class="field"></td>
+                    <td bgcolor="white" class="numbers">8</td>
+
+                </tr>
+
+                <tr>
+                    <td bgcolor="white" class="numbers">7</td>
+                    <td bgcolor="grey" id="A7" class="field"></td>
+                    <td bgcolor="white" id="B7" class="field"></td>
+                    <td bgcolor="grey" id="C7" class="field"></td>
+                    <td bgcolor="white" id="D7" class="field"></td>
+                    <td bgcolor="grey" id="E7" class="field"></td>
+                    <td bgcolor="white" id="F7" class="field"></td>
+                    <td bgcolor="grey" id="G7" class="field"></td>
+                    <td bgcolor="white" id="H7" class="field"></td>
+                    <td bgcolor="white" class="numbers">7</td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="white" class="numbers">6</td>
+                    <td bgcolor="white" id="A6" class="field"></td>
+                    <td bgcolor="grey" id="B6" class="field"></td>
+                    <td bgcolor="white" id="C6" class="field"></td>
+                    <td bgcolor="grey" id="D6" class="field"></td>
+                    <td bgcolor="white" id="E6" class="field"></td>
+                    <td bgcolor="grey" id="F6" class="field"></td>
+                    <td bgcolor="white" id="G6" class="field"></td>
+                    <td bgcolor="grey" id="H6" class="field"></td>
+                    <td bgcolor="white" class="numbers">6</td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="white" class="numbers">5</td>
+                    <td bgcolor="grey" id="A5" class="field"></td>
+                    <td bgcolor="white" id="B5" class="field"></td>
+                    <td bgcolor="grey" id="C5" class="field"></td>
+                    <td bgcolor="white" id="D5" class="field"></td>
+                    <td bgcolor="grey" id="E5" class="field"></td>
+                    <td bgcolor="white" id="F5" class="field"></td>
+                    <td bgcolor="grey" id="G5" class="field"></td>
+                    <td bgcolor="white" id="H5" class="field"></td>
+                    <td bgcolor="white" class="numbers">5</td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="white" class="numbers">4</td>
+                    <td bgcolor="white" id="A4" class="field"></td>
+                    <td bgcolor="grey" id="B4" class="field"></td>
+                    <td bgcolor="white" id="C4" class="field"></td>
+                    <td bgcolor="grey" id="D4" class="field"></td>
+                    <td bgcolor="white" id="E4" class="field"></td>
+                    <td bgcolor="grey" id="F4" class="field"></td>
+                    <td bgcolor="white" id="G4" class="field"></td>
+                    <td bgcolor="grey" id="H4" class="field"></td>
+                    <td bgcolor="white" class="numbers">4</td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="white" class="numbers">3</td>
+                    <td bgcolor="grey" id="A3" class="field"></td>
+                    <td bgcolor="white" id="B3" class="field"></td>
+                    <td bgcolor="grey" id="C3" class="field"></td>
+                    <td bgcolor="white" id="D3" class="field"></td>
+                    <td bgcolor="grey" id="E3" class="field"></td>
+                    <td bgcolor="white" id="F3" class="field"></td>
+                    <td bgcolor="grey" id="G3" class="field"></td>
+                    <td bgcolor="white" id="H3" class="field"></td>
+                    <td bgcolor="white" class="numbers">3</td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="white" class="numbers">2</td>
+                    <td bgcolor="white" id="A2" class="field"></td>
+                    <td bgcolor="grey" id="B2" class="field"></td>
+                    <td bgcolor="white" id="C2" class="field"></td>
+                    <td bgcolor="grey" id="D2" class="field"></td>
+                    <td bgcolor="white" id="E2" class="field"></td>
+                    <td bgcolor="grey" id="F2" class="field"></td>
+                    <td bgcolor="white" id="G2" class="field"></td>
+                    <td bgcolor="grey" id="H2" class="field"></td>
+                    <td bgcolor="white" class="numbers">2</td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="white" class="numbers">1</td>
+                    <td bgcolor="grey" id="A1" class="field"></td>
+                    <td bgcolor="white" id="B1" class="field"></td>
+                    <td bgcolor="grey" id="C1" class="field"></td>
+                    <td bgcolor="white" id="D1" class="field"></td>
+                    <td bgcolor="grey" id="E1" class="field"></td>
+                    <td bgcolor="white" id="F1" class="field"></td>
+                    <td bgcolor="grey" id="G1" class="field"></td>
+                    <td bgcolor="white" id="H1" class="field"></td>
+                    <td bgcolor="white" class="numbers">1</td>
+                </tr>
+
+               <tr class="letters">
+                    <td></td>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                    <td>H</td>
+
+               </tr>
+
+                <tr>
+                    <td id="arrow" colspan="10">
+                        {% block algebraic %}{% endblock %}
+                    </td>
+
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    {% block after %}{% endblock %}
+
+    </div>
+</div>
+
 
 
 <script type="text/javascript">
